@@ -14,7 +14,8 @@ class StudentController extends Controller
      */
     public function index()
     {
-        return view('index');
+        $students = Student::all();
+        return view('index', compact('students'));
     }
 
     /**
@@ -36,7 +37,7 @@ class StudentController extends Controller
     public function store(Request $request)
     {
         Student::create($request->all());
-        return view('index');
+        return redirect()->route('students.index');
     }
 
     /**

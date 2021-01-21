@@ -14,7 +14,7 @@
 <body style="background-color: rgb(197, 144, 204);"><br>
 <!-- navbar -->
  <nav class="navbar navbar-expand-sm navbar-dark bg-secondary">
-     <a class="navbar-brand" href="#"><b>Information & Communication Technology</b></a>
+     <a class="navbar-brand" href="/students"><b>Information & Communication Technology</b></a>
      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
          aria-expanded="false" aria-label="Toggle navigation"></button>
      <div class="collapse navbar-collapse" id="collapsibleNavId">
@@ -40,7 +40,11 @@
      </div>
  </nav>
 <!-- navbar -->
+
+<div class='container-fluid'>
 @yield('content')
+</div>
+
 
 
 
