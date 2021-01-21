@@ -73,7 +73,7 @@
                                     <td>{{$student->phone}}</td>
                                     <td>
                                         <a class="btn btn-success" href="#">Edit</a>
-                                        <a class="btn btn-danger" href="#">Delete</a>
+                                        <a class="btn btn-danger" href="{{route('students.delete',$student->id)}}">Delete</a>
                                     </td>
                                 </tr>
                                 @endforeach

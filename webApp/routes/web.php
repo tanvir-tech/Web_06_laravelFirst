@@ -18,5 +18,16 @@ Route::get('/', function () {
 });
 
 Route::get('/students',[StudentController::class,'index'])->name('students.index');
-
 Route::post('/register',[StudentController::class,'store'])->name('students.store');
+
+Route::get('/delete/{student}',[StudentController::class,'delete'])->name('students.delete');
+
+
+
+
+
+
+Route::post('/edit',[StudentController::class,'edit'])->name('students.edit');
+
+
+

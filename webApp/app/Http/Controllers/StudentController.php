@@ -80,8 +80,9 @@ class StudentController extends Controller
      * @param  \App\Student  $student
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Student $student)
+    public function delete(Student $student)
     {
-        //
+        $student->delete();
+        return redirect()->route('students.index');
     }
 }
